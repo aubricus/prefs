@@ -9,38 +9,32 @@ export PIP_RESPECT_VIRTUALENV=true
 
 # If virtualenv wrapper exists in these locations...
 
-VENVWRAPPER_LOCATION_1="/usr/local/share/python/virtualenvwrapper.sh"
-VENVWRAPPER_LOCATION_2="$HOME/.virtualenv/default/bin/virtualenvwrapper.sh"
-VENVWRAPPER_LOCATION_3="/usr/local/bin/virtualenvwrapper.sh"
+venvwrappers[0]="/usr/local/share/python/virtualenvwrapper.sh"
+venvwrappers[1]="$HOME/.virtualenv/default/bin/virtualenvwrapper.sh"
+venvwrappers[2]="/usr/local/bin/virtualenvwrapper.sh"
 
-if [ -f "VENVWRAPPER_LOCATION_1" ]; then
-    . "VENVWRAPPER_LOCATION_1"
+# Try loading venvwrappers.
 
-elif [ -f "VENVWRAPPER_LOCATION_2" ]; then
-    . "VENVWRAPPER_LOCATION_2"
-
-elif [ -f "VENVWRAPPER_LOCATION_3" ]; then
-    . "VENVWRAPPER_LOCATION_3"
-fi
+for venvwrapper in "${venvwrappers[@]}"
+do
+    if [ -f $venvwrapper ]; then
+        # echo "Loading: ${venvwrapper}"
+        . $venvwrapper
+    fi
+done
 
 
 # If default venv exists...
 
-DEFAULTVENV=$WORKON_HOME/default
+default_env="$WORKON_HOME/default"
 
-if [ -d "$DEFAULTENV"]; then
-
+if [ -d "$default_env" ]; then
     # Load it.
-    source $DEFAULTENV/bin/activate
-
+    . ${default_env}/bin/activate
 else
-
-    # Create it & Load it.
-    virtualenv default $WORKON_HOME
-    source $DEFAULTENV/bin/activate
-
+   virtualenv $default_env
+   . $default_env/bin/activate
 fi
-
 
 # Virtalenv Wrapper Aliases
 

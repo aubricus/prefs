@@ -24,17 +24,28 @@ prefs=($linux)
 
 
 # Redefine prefs if we are on OSX (Darwin)
+# Using [n] notation for readability
+# You can also init array thusly, prefs=($foo $bar $baz)
 
 if [ $sys_name == $darwin_name ]; then
-    prefs=($pref_colors $pref_settings $pref_darwin $pref_python $pref_virtualenv $pref_amazon $pref_aliases $pref_ps1)
+    prefs[0]=$pref_colors
+    prefs[1]=$pref_ps1
+    prefs[2]=$pref_settings
+    prefs[3]=$pref_darwin
+    prefs[4]=$pref_python
+    prefs[5]=$pref_virtualenv
+    prefs[6]=$pref_amazon
+    prefs[7]=$pref_aliases
 fi
 
 
 # Load prefs
+echo "Loading Prefs:"
 
 for pref in "${prefs[@]}"
 do
     if [ -f $pref ]; then
+        echo "${pref}"
         . $pref
     fi
 done
