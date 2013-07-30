@@ -32,8 +32,9 @@ if [ -d "$default_env" ]; then
     # Load it.
     . ${default_env}/bin/activate
 else
-   virtualenv $default_env
-   . $default_env/bin/activate
+    # Create & load it.
+    virtualenv $default_env
+    . $default_env/bin/activate
 fi
 
 # Virtalenv Wrapper Aliases

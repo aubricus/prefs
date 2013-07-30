@@ -40,12 +40,12 @@ fi
 
 
 # Load prefs
-echo "Loading Prefs:"
+# echo "Loading Prefs:"
 
 for pref in "${prefs[@]}"
 do
     if [ -f $pref ]; then
-        echo "${pref}"
+        # echo "${pref}"
         . $pref
     fi
 done
