@@ -1,0 +1,15 @@
+
+# Path setup
+
+export HOME_BIN=$HOME/bin
+export USR_LOCAL_BIN=/usr/local/bin
+export USR_LOCAL_SBIN=/usr/local/sbin
+
+PATH=$HOME_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$PATH
+
+
+# Must brew install git and bash-completion to get __git_ps1
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi

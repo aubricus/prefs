@@ -1,0 +1,5 @@
+
+# Export new PS1
+# Color variables come from prefs/colors
+
+export PS1='\$${YELLOW} >>${COLOR_RESET}'

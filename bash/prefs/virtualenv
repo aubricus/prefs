@@ -1,0 +1,50 @@
+
+# Virtualenv Settings
+
+export WORKON_HOME=$HOME/.virtualenv
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_REQUIRE_VIRTUALENV=true
+export PIP_RESPECT_VIRTUALENV=true
+
+
+# If virtualenv wrapper exists in these locations...
+
+VENVWRAPPER_LOCATION_1="/usr/local/share/python/virtualenvwrapper.sh"
+VENVWRAPPER_LOCATION_2="$HOME/.virtualenv/default/bin/virtualenvwrapper.sh"
+VENVWRAPPER_LOCATION_3="/usr/local/bin/virtualenvwrapper.sh"
+
+if [ -f "VENVWRAPPER_LOCATION_1" ]; then
+    . "VENVWRAPPER_LOCATION_1"
+
+elif [ -f "VENVWRAPPER_LOCATION_2" ]; then
+    . "VENVWRAPPER_LOCATION_2"
+
+elif [ -f "VENVWRAPPER_LOCATION_3" ]; then
+    . "VENVWRAPPER_LOCATION_3"
+fi
+
+
+# If default venv exists...
+
+DEFAULTVENV=$WORKON_HOME/default
+
+if [ -d "$DEFAULTENV"]; then
+
+    # Load it.
+    source $DEFAULTENV/bin/activate
+
+else
+
+    # Create it & Load it.
+    virtualenv default $WORKON_HOME
+    source $DEFAULTENV/bin/activate
+
+fi
+
+
+# Virtalenv Wrapper Aliases
+
+alias mkenv='mkvirtualenv $1'
+alias rmenv='rmvirtualenv $1'
+alias chenv='workon $1'
+alias denv='deactivate'

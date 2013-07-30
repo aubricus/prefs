@@ -1,0 +1,26 @@
+
+# System
+
+alias ll='ls -la'
+
+
+# GitHub
+
+alias gh="echo $(git config remote.origin.url) | sed 's#.*:#http://github.com/#g' | xargs open"
+
+
+# Vagrant
+
+alias vinit='vagrant init'
+alias vup='vagrant up'
+alias vdestroy='vagrant destroy'
+alias vreload='vagrant reload'
+alias vprovision='vagrant provision'
+alias vhalt='vagrant halt'
+alias vsuspend='vagrant suspend'
+alias vssh='vagrant ssh'
+
+
+# Ssh-Agent
+
+alias ssh-gh='ssh-add ~/.ssh/git_rsa'

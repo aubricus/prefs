@@ -1,0 +1,40 @@
+
+# Alias Variables
+
+pref_dir="$HOME/.prefs"
+pref_colors="$pref_dir/colors"
+pref_settings="$pref_dir/settings"
+pref_darwin="$pref_dir/darwin"
+pref_linux="$pref_dir/linux"
+pref_python="$pref_dir/python"
+pref_virtualenv="$pref_dir/virtualenv"
+pref_amazon="$pref_dir/amazon"
+pref_aliases="$pref_dir/aliases"
+pref_ps1="$pref_dir/ps1"
+
+
+# Other Variables
+
+sys_name=$(uname)
+darwin_name="Darwin"
+
+# Create pref array with minimal settings.
+
+prefs=($linux)
+
+
+# Redefine prefs if we are on OSX (Darwin)
+
+if [ $sys_name == $darwin_name ]; then
+    prefs=($pref_colors $pref_settings $pref_darwin $pref_python $pref_virtualenv $pref_amazon $pref_aliases $pref_ps1)
+fi
+
+
+# Load prefs
+
+for pref in "${prefs[@]}"
+do
+    if [ -f $pref ]; then
+        . $pref
+    fi
+done
