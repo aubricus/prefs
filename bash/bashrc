@@ -18,6 +18,7 @@ pref_ps1="$pref_dir/ps1"
 sys_name=$(uname)
 darwin_name="Darwin"
 
+
 # Create pref array with minimal settings.
 
 prefs=($linux)

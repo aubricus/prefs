@@ -24,3 +24,11 @@ alias vssh='vagrant ssh'
 # Ssh-Agent
 
 alias ssh-gh='ssh-add ~/.ssh/git_rsa'
+
+
+# Virtalenv Wrapper Aliases
+
+alias mkenv='mkvirtualenv $1'
+alias rmenv='rmvirtualenv $1'
+alias chenv='workon $1'
+alias denv='deactivate'

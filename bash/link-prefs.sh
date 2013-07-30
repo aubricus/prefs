@@ -6,17 +6,17 @@
 
 # Directories
 
-install_dir=$PWD
-target_dir=$HOME
+target_dir=$PWD
+link_dir=$HOME
 
 
 # Link targets
 
-targets[0]="$install_dir/bash_profile"
-targets[1]="$install_dir/bashrc"
-targets[2]="$install_dir/tmux.conf"
-targets[2]="$install_dir/vimrc"
-targets[3]="$install_dir/prefs"
+targets[0]="$target_dir/bash_profile"
+targets[1]="$target_dir/bashrc"
+targets[2]="$target_dir/tmux.conf"
+targets[2]="$target_dir/vimrc"
+targets[3]="$target_dir/prefs"
 
 
 # Link Names
@@ -31,7 +31,7 @@ links[3]=".prefs"
 # Create Symlinks
 
 echo "Creating links to bash preferences!"
-cd $target_dir
+cd $link_dir
 
 for (( i=0; i<${#targets[@]}; i++ ));
 do

@@ -12,4 +12,7 @@ PATH=$HOME_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$PATH
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
+
+else
+    echo "Could not load /etc/bash_completion, please check you have brew installed git and bash-completion."
 fi

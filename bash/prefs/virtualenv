@@ -36,10 +36,3 @@ else
     virtualenv $default_env
     . $default_env/bin/activate
 fi
-
-# Virtalenv Wrapper Aliases
-
-alias mkenv='mkvirtualenv $1'
-alias rmenv='rmvirtualenv $1'
-alias chenv='workon $1'
-alias denv='deactivate'
