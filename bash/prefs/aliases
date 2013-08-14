@@ -23,7 +23,9 @@ alias vssh='vagrant ssh'
 
 # Ssh-Agent
 
+alias ssh-ls='ssh-add -l'
 alias ssh-gh='ssh-add ~/.ssh/git_rsa'
+alias ssh-fxsandbox='ssh-add ~/.ssh/fxsandbox_rsa'
 
 
 # Virtalenv Wrapper Aliases
