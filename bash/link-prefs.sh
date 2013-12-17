@@ -24,8 +24,9 @@ targets[3]="$target_dir/prefs"
 links[0]=".bash_profile"
 links[1]=".bashrc"
 links[2]=".tmux.conf"
-links[2]=".vimrc"
-links[3]=".prefs"
+links[3]=".tmux-osx.conf"
+links[4]=".vimrc"
+links[5]=".prefs"
 
 
 # Create Symlinks
