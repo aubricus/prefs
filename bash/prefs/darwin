@@ -4,9 +4,13 @@
 export HOME_BIN=$HOME/bin
 export USR_LOCAL_BIN=/usr/local/bin
 export USR_LOCAL_SBIN=/usr/local/sbin
+export CABAL_BIN=$HOME/.cabal/bin
 
-PATH=$HOME_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$PATH
+PATH=$HOME_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$CABAL_BIN:$PATH
 
+# Switch to brew php
+# export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
+export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 
 # Must brew install git and bash-completion to get __git_ps1
 
@@ -16,3 +20,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 else
     echo "Could not load /etc/bash_completion, please check you have brew installed git and bash-completion."
 fi
+
+# TMUX OSX
+set-option -g default-command "reattach-to-user-namespace -l bash"
