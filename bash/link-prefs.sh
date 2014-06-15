@@ -15,6 +15,7 @@ link_dir=$HOME
 targets[0]="$target_dir/bash_profile"
 targets[1]="$target_dir/bashrc"
 targets[2]="$target_dir/tmux.conf"
+targets[2]="$target_dir/tmux-osx.conf"
 targets[2]="$target_dir/vimrc"
 targets[3]="$target_dir/prefs"
 

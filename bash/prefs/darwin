@@ -20,6 +20,3 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 else
     echo "Could not load /etc/bash_completion, please check you have brew installed git and bash-completion."
 fi
-
-# TMUX OSX
-set-option -g default-command "reattach-to-user-namespace -l bash"
