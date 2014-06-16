@@ -21,6 +21,7 @@ alias gc='git commit -a'
 alias gca='git commit -a --amend'
 alias gcam='git commit -am $1'
 alias gal='git add -A'
+alias gp='git push'
 
 # Vagrant
 
