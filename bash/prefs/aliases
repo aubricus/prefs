@@ -9,9 +9,31 @@ alias ll='ls -la'
 alias gh="echo $(git config remote.origin.url) | sed 's#.*:#http://github.com/#g' | xargs open"
 
 
+# Git
+alias gf='git fetch --all'
+alias gmo='git merge origin $1'
+alias gmos='git add -A && git stash && git merge origin $1 && git stash pop'
+alias gro='git rebase origin $1'
+alias grom='git rebase origin master'
+alias gmom='git merge origin master'
+alias gmt='git mergetool'
+alias gs='git status'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gcam='git commit -a --amend'
+alias gcam='git commit -am $1'
+alias gal='git add -A'
+alias gp='git push'
+alias gcn='git checkout -b $1'
+alias gco='git checkout $1'
+alias gdel='git branch -D $1'
+alias gdelr='git push origin :$1'
+alias gclo='git clone $1'
+
+
 # Vagrant
 
-alias vinit='vagrant init'
+alias vini='vagrant init'
 alias vup='vagrant up'
 alias vdestroy='vagrant destroy'
 alias vreload='vagrant reload'
@@ -25,7 +47,6 @@ alias vssh='vagrant ssh'
 
 alias ssh-ls='ssh-add -l'
 alias ssh-gh='ssh-add ~/.ssh/git_rsa'
-alias ssh-fxsandbox='ssh-add ~/.ssh/fxsandbox_rsa'
 
 
 # Virtalenv Wrapper Aliases
@@ -34,6 +55,8 @@ alias mkenv='mkvirtualenv $1'
 alias rmenv='rmvirtualenv $1'
 alias chenv='workon $1'
 alias denv='deactivate'
+alias lsenv='lsvirtualenv'
 
 # Misc
-alias devbot-update='pip install --upgrade git+ssh://git@github.com/blitzagency/agency-automation-tools.git#egg=agency'
+
+alias chkport='sudo lsof -i $1'

@@ -1,3 +1,3 @@
 # Preferences
 
-This repo includes many preferences I use to set up various workstations.
+Manage development preferences for various development machines
