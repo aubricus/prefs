@@ -11,6 +11,7 @@ alias gh="echo $(git config remote.origin.url) | sed 's#.*:#http://github.com/#g
 
 # Git
 alias gf='git fetch --all'
+alias gall='git add -A'
 alias gmo='git merge origin $1'
 alias gmos='git add -A && git stash && git merge origin $1 && git stash pop'
 alias gro='git rebase origin $1'
@@ -29,6 +30,7 @@ alias gco='git checkout $1'
 alias gdel='git branch -D $1'
 alias gdelr='git push origin :$1'
 alias gclo='git clone $1'
+alias gho="open `git remote -v | grep fetch | awk '{print $2}' | sed 's/git@/http:\/\//' | sed 's/com:/com\//'`| head -n1"
 
 
 # Vagrant
