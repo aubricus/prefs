@@ -1,3 +1,3 @@
 # Preferences
 
-Manage development preferences for various development machines
+Manage development environment preferences.
