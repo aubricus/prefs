@@ -13,7 +13,6 @@ alias gh="echo $(git config remote.origin.url) | sed 's#.*:#http://github.com/#g
 alias gf='git fetch --all'
 alias gall='git add -A'
 alias gmo='git merge origin $1'
-alias gmos='git add -A && git stash && git merge origin $1 && git stash pop'
 alias gro='git rebase origin $1'
 alias grom='git rebase origin master'
 alias gmom='git merge origin master'
