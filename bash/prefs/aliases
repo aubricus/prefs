@@ -1,3 +1,8 @@
+# Helpers
+
+alias aliases='cat ~/.prefs/aliases'
+alias raliases='. ~/.prefs/aliases'
+
 # System
 
 alias ll='ls -la'
@@ -20,7 +25,7 @@ alias gs='git status'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gcam='git commit -a --amend'
-alias gcam='git commit -am $1'
+alias gcamm='git commit -am $1'
 alias gal='git add -A'
 alias gp='git push'
 alias gcn='git checkout -b $1'
