@@ -1,6 +1,11 @@
-sublime_cli="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
-target="/usr/local/bin/subl"
+sublime2_cli="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+sublime3_cli="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+link_target="/usr/local/bin/subl"
 
-if [ -f "$sublime_cli" ] && [ ! -f "$target" ]; then
-    ln -s "$sublime_cli" "$target"
+if [ -f "$sublime3_cli" ] && [ ! -f "$link_target" ]; then
+    ln -s "$sublime3_cli" "$link_target"
+
+elif [ -f "$sublime2_cli" ] && [ ! -f "$link_target" ]; then
+    ln -s "$sublime2_cli" "$link_target"
+
 fi
