@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+${1:functionName}: function(${2:}) {
+    // ${0:}
+},
+]]></content>
+    <tabTrigger>funcliteral</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

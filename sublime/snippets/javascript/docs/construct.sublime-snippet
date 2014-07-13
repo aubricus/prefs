@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * ${1:Creates a new ItemView for fun and profit}
+ *
+ * @constructs
+ * @extends ${2:marionette.ItemView}
+ * ${3:@param \{object\} [options] Options for Initialization}
+ *
+ */
+]]></content>
+    <tabTrigger>initialize</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
+
+
+

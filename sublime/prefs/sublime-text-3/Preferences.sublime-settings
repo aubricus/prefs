@@ -1,0 +1,81 @@
+{
+    "auto_complete_commit_on_tab": true,
+    "binary_file_patterns":
+    [
+        "*.jpg",
+        "*.jpeg",
+        "*.png",
+        "*.gif",
+        "*.ttf",
+        "*.tga",
+        "*.dds",
+        "*.ico",
+        "*.eot",
+        "*.pdf",
+        "*.swf",
+        "*.jar",
+        "*.zip"
+    ],
+    "file_exclude_patterns":
+    [
+        "*.pyc",
+        "*.pyo",
+        "*.exe",
+        "*.dll",
+        "*.obj",
+        "*.o",
+        "*.a",
+        "*.lib",
+        "*.so",
+        "*.dylib",
+        "*.ncb",
+        "*.sdf",
+        "*.suo",
+        "*.pdb",
+        "*.idb",
+        ".DS_Store",
+        "*.class",
+        "*.psd",
+        "*.db"
+    ],
+    "folder_exclude_patterns":
+    [
+        ".svn",
+        ".git",
+        ".hg",
+        "CVS",
+        ".sass-cache"
+    ],
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "rulers":
+    [
+        80, 120
+    ],
+
+    // re-enable these after packages are installed
+    // "color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
+    // "theme": "Flatland Dark.sublime-theme",
+
+    "default_encoding": "UTF-8",
+    "fallback_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "draw_white_space": "all",
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": true,
+    "trim_trailing_white_space_on_save": true,
+
+    "font_face": "Ubuntu Mono",
+    "font_size": 12.0,
+
+    "overlay_scroll_bars": "enabled",
+
+    "word_wrap": true,
+    "word_wrap_column": 80,
+
+    "bold_folder_labels": true,
+    "spell_check": false,
+    "tree_animation_enabled": false
+}

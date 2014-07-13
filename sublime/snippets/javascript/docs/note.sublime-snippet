@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+*
+* .. note ::
+*     ${2:heres an example}
+]]></content>
+    <tabTrigger>note</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
+

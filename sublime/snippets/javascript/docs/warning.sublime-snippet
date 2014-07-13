@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+*
+* .. warning ::
+*     ${2:heres a warning}
+]]></content>
+    <tabTrigger>warning</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * ${1:Module Description Here}
+ * @module ${2:path.to.module}
+ */
+]]></content>
+    <tabTrigger>module</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
+

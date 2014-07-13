@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+window.${1:NAMESPACE} = window.${1:NAMESPACE} || {};
+
+(function(window, document, ${2:DEPS}){
+
+var exports;
+exports = window.${1:NAMESPACE};
+
+${0:}
+
+})(window, document, ${2:DEPS});
+]]></content>
+    <tabTrigger>class</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

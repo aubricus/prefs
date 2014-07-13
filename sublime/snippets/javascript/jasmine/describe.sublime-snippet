@@ -1,0 +1,43 @@
+<snippet>
+    <content><![CDATA[
+define(function(require, exports, module) {
+
+// Imports
+
+
+
+describe('${1:description here}', function() {
+
+
+    // Set Up
+
+    beforeEach(function() {
+    });
+
+    afterEach(function() {
+    });
+
+    // Helpers
+
+    function getOptions(augments) {
+        augments = augments || {};
+
+        var testSuiteDefaults = {
+        };
+
+        return _.extend(testSuiteDefaults, augments);
+    }
+
+
+    // Test Suite
+    ${2:}
+    
+
+}); // Eof describe
+}); // Eof define
+
+]]></content>
+    <tabTrigger>describe</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+

@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+define(function (require, exports, module) {
+
+var _ = require('underscore');
+var View = require('rich/view').View;
+
+var ${1:MyView} =  View.extend({
+    initialize : function(){
+
+    }
+});
+
+exports.${1:MyView} = ${1:MyView};
+});
+
+]]></content>
+    <tabTrigger>fview</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+

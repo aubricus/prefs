@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * ${1:It's an important module var}
+ * @var
+ * @type \{${2:Number}\}
+
+ * @default
+ * @memberOf ${3:zap}
+ */
+]]></content>
+    <tabTrigger>modulevar</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
+

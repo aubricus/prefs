@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+${1:text}: {
+    content: {type: 'text', text: '${2:foo}'},
+    properties: {
+        ${4:color: '#fff'}
+    },
+    modifier: {
+        origin:[0.5, 0, 0],
+        opacity: 0,
+        transform: Transform.translate(0, 0, 0)
+    },
+}
+]]></content>
+    <tabTrigger>tsurface</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
