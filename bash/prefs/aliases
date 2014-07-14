@@ -6,7 +6,8 @@ alias raliases='. ~/.prefs/aliases'
 # System
 
 alias ll='ls -la'
-
+alias cd..='cd ..'
+alias reset='clear && cd'
 
 # GitHub
 
