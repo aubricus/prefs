@@ -1,5 +1,3 @@
-select-window -t 0
-
 split-window -v
 split-window -h
 select-pane -U
