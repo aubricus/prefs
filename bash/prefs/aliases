@@ -67,3 +67,5 @@ alias lsenv='lsvirtualenv'
 alias chkport='sudo lsof -i $1'
 alias workspace='cd ~/Workspace'
 alias repos='cd ~/Repos'
+alias ios='open -a "iPhone Simulator"'
+
