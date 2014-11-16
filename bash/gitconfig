@@ -6,7 +6,7 @@
     default = simple
 
 [core]
-    editor = subl
+    editor = "subl --wait"
     excludesfile = ~/.gitignore_global
 
 [merge]
