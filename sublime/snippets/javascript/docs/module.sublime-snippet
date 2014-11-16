@@ -5,7 +5,7 @@
  * @module ${2:path.to.module}
  */
 ]]></content>
-    <tabTrigger>module</tabTrigger>
+    <tabTrigger>docs-module</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 

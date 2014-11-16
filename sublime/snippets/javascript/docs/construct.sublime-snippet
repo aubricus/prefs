@@ -9,7 +9,7 @@
  *
  */
 ]]></content>
-    <tabTrigger>initialize</tabTrigger>
+    <tabTrigger>docs-initialize</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 

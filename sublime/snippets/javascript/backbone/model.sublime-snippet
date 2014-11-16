@@ -3,13 +3,14 @@
 define(function( require, exports, module ){
 
 var backbone = require('backbone');
-var ${1:Model} = backbone.Model.extend({
-    defaults: {
 
+var ${1:FooModel} = backbone.Model.extend({
+    defaults: {
+        ${0:}
     }
 });
 
-exports.${1:Model} = ${1:Model};
+exports.${1:FooModel} = ${1:FooModel};
 
 });
 

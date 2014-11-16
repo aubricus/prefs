@@ -2,7 +2,7 @@
     <content><![CDATA[
 /** @lends ${1:zap.ItemView}.prototype */
 ]]></content>
-    <tabTrigger>lends</tabTrigger>
+    <tabTrigger>docs-lends</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 

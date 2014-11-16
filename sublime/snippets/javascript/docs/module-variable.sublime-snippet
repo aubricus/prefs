@@ -9,7 +9,7 @@
  * @memberOf ${3:zap}
  */
 ]]></content>
-    <tabTrigger>modulevar</tabTrigger>
+    <tabTrigger>docs-modulevar</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 

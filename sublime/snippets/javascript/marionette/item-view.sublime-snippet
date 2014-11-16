@@ -3,11 +3,10 @@
 define(function (require, exports, module) {
 
 var marionette = require('marionette');
-var ${2:FooItemView} = require('../views/cells/${3:path/to/itemview}').${2:FooItemView};
+var template = require('hbs!../templates/${1:path/to/template}');
 
-var ${4:FooCollectionView} =  marionette.CollectionView.extend({
-    childView : ${2:FooItemView},
-    childViewContainer : '.js-${5:item-container}',
+var ${2:FooItemView} = marionette.ItemView.extend({
+    template : template,
 
     ui : {
         // 'foo': 'js-foo'
@@ -22,11 +21,11 @@ var ${4:FooCollectionView} =  marionette.CollectionView.extend({
     }
 });
 
-exports.${4:FooCollectionView} = ${4:FooCollectionView};
+exports.${2:FooItemView} = ${2:FooItemView};
 
 });
 ]]></content>
-    <tabTrigger>collectionview</tabTrigger>
+    <tabTrigger>itemview</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 

@@ -3,14 +3,14 @@
 define(function( require, exports, module ){
 
 var backbone = require('backbone');
-var ${1:Model} = require('./models').${1:Model};
+var ${1:FooModel} = require('../${2:path/to/model}').${1:FooModel};
 
-var ${2:Collection} =  backbone.Collection.extend({
-    ${3://}urlRoot: '${4:/api/v1/auction_item/}',
-    model: ${1:Model}
+var ${3:FooCollection} =  backbone.Collection.extend({
+    ${4://}urlRoot: '${5:/api/v1/foo/}',
+    model: ${1:FooModel}
 });
 
-exports.${2:Collection} = ${2:Collection};
+exports.${3:FooCollection} = ${3:FooCollection};
 
 });
 ]]></content>

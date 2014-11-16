@@ -4,7 +4,7 @@
 * .. note ::
 *     ${2:heres an example}
 ]]></content>
-    <tabTrigger>note</tabTrigger>
+    <tabTrigger>docs-note</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 

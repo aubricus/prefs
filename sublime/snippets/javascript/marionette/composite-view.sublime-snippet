@@ -3,25 +3,28 @@
 define(function (require, exports, module) {
 
 var marionette = require('marionette');
-var ${2:ItemView} = require('./${2:ItemView}').${2:ItemView};
-var template = require('hbs!../templates/${1:template}');
+var ${2:FooItemView} = require('../views/${2:path/to/itemview}').${2:FooItemView};
+var template = require('hbs!../templates/${1:path/to/template}');
 
-var ${3:CompositeView} =  marionette.CompositeView.extend({
+var ${3:FooCompositeView} =  marionette.CompositeView.extend({
     template : template,
-    itemView : ${2:ItemView},
-    itemViewContainer : '#${3:item-container}',
-    initialize : function(){
+    childView : ${2:FooItemView},
+    childViewContainer : '#${3:.child-view-container}',
 
-    },
     ui : {
-
+        // 'foo': 'js-foo'
     },
-    events : {
 
-    }
+    events : {
+        // 'click @ui.foo': 'wantsFooClick'
+    },
+
+    initialize : function(options){
+        ${0:}
+    },
 });
 
-exports.${3:CompositeView} = ${3:CompositeView};
+exports.${3:FooCompositeView} = ${3:FooCompositeView};
 
 });
 ]]></content>

@@ -4,13 +4,14 @@ define(function (require, exports, module) {
 
 var marionette = require('marionette');
 
-var {$1:AppRouter} =  marionette.AppRouter.extend({
+var ${1:FooAppRouter} =  marionette.AppRouter.extend({
     appRoutes:{
-        '*filter':'setFilter'
+        '${2:route}' : '${3:routeDelegate}',${0:}
+        '*default': 'default'
     }
 });
 
-exports.{$1:AppRouter}  = {$1:AppRouter};
+exports.${1:FooAppRouter}  = ${1:FooAppRouter};
 
 });
 ]]></content>

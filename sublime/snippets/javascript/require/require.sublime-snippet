@@ -1,10 +1,8 @@
 <snippet>
     <content><![CDATA[
-define(function (require, exports, module) {
-    
-});
+var ${1:} = require('${2:path/to/module}');
 ]]></content>
-    <tabTrigger>require</tabTrigger>
+    <tabTrigger>rq-require</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 
