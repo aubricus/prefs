@@ -13,18 +13,24 @@ link_dir=$HOME
 # Link targets
 targets[0]="$target_dir/bash_profile"
 targets[1]="$target_dir/bashrc"
-targets[2]="$target_dir/vimrc"
-targets[3]="$target_dir/prefs"
-targets[4]="$target_dir/tmux"
-targets[5]="$target_dir/tmux.conf"
+targets[2]="$target_dir/gemrc"
+targets[3]="$target_dir/vimrc"
+targets[4]="$target_dir/prefs"
+targets[5]="$target_dir/tmux"
+targets[6]="$target_dir/tmux.conf"
+targets[7]="$target_dir/gitconfig"
+targets[8]="$target_dir/gitignore_global"
 
 # Link Names
 links[0]=".bash_profile"
 links[1]=".bashrc"
-links[2]=".vimrc"
-links[3]=".prefs"
-links[4]='.tmux'
-links[5]='.tmux.conf'
+links[2]=".gemrc"
+links[3]=".vimrc"
+links[4]=".prefs"
+links[5]='.tmux'
+links[6]='.tmux.conf'
+links[7]=".gitconfig"
+links[8]=".gitignore_global"
 
 # Script Functions
 
@@ -37,6 +43,7 @@ function link_prefs {
         link=${links[$i]}
 
         if [ -f $target ] || [ -d $target ]; then
+            echo "$link->$target"
             ln -s $target $link
         fi
     done
@@ -53,6 +60,7 @@ function unlink_prefs {
         link=${links[$i]}
 
         if [ -f $target ] || [ -d $target ]; then
+            echo $link_dir/$link
             rm -rf $link_dir/$link
         fi
     done

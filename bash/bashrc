@@ -20,7 +20,7 @@ darwin_name="Darwin"
 
 # Create pref array with minimal settings.
 
-prefs=($linux)
+prefs=($pref_linux)
 
 # Redefine prefs if we are on OSX (Darwin)
 # Using [n] notation for readability
@@ -33,10 +33,9 @@ if [ $sys_name == $darwin_name ]; then
     prefs[3]=$pref_darwin
     prefs[4]=$pref_python
     prefs[5]=$pref_virtualenv
-    prefs[6]=$pref_amazon
-    prefs[7]=$pref_aliases
-    prefs[8]=$pref_sublime
-    prefs[9]=$pref_rvm
+    prefs[6]=$pref_aliases
+    prefs[7]=$pref_sublime
+    prefs[8]=$pref_rvm
 fi
 
 
@@ -49,5 +48,3 @@ do
         source $pref
     fi
 done
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

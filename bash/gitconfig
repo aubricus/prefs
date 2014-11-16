@@ -1,0 +1,42 @@
+[user]
+    name = Aubrey Taylor
+    email = aubricus@gmail.com
+
+[push]
+    default = simple
+
+[core]
+    editor = subl
+    excludesfile = ~/.gitignore_global
+
+[merge]
+    summary = true
+    verbosity = 1
+
+[push]
+    default = tracking
+
+
+[color]
+    ui = true
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+    # Kaleidoscope config
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+
+[difftool]
+    prompt = false
+
+[mergetool]
+    prompt = false
+
+[mergetool "Kaleidoscope"]
+    trustexitcode = true
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+
+[diff]
+    tool = Kaleidoscope
