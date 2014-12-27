@@ -22,3 +22,11 @@ Cheers!
 - Sublime Text 3
 - Virtual Environment (python)
 - Virtual Environment Wrapper (python)
+- Sass (ruby)
+- Compsas (ruby)
+- Listen (ruby)
+- Bourbon (ruby)
+- Susy (ruby)
+- Breakpoint (ruby)
+- Vagrant
+- VirtualBox
