@@ -19,6 +19,7 @@ Cheers!
 - Git (brew)
 - bash-completion (brew)
 - tmux (brew)
+- reattach-to-user-namespace (brew)
 - Sublime Text 3
 - Virtual Environment (python)
 - Virtual Environment Wrapper (python)
