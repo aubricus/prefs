@@ -17,7 +17,7 @@ Cheers!
 - Python 2.7 (brew)
 - RVM
 - Git (brew)
-- Git PS1 (brew)
+- bash-completion (brew)
 - tmux (brew)
 - Sublime Text 3
 - Virtual Environment (python)
