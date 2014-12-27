@@ -14,7 +14,7 @@ Cheers!
 
 - Brew
 - Ruby
-- Python (2.7)
+- Python 2.7 (brew)
 - RVM
 - Git (brew)
 - Git PS1 (brew)
