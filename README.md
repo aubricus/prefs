@@ -9,25 +9,3 @@ I use this repository to manage my dev environment across multiple machines. I h
 If you like what you see feel free to fork and bend it to your own will.
 
 Cheers!
-
-## System Requirements
-
-- Brew
-- Ruby
-- Python 2.7 (brew)
-- RVM
-- Git (brew)
-- bash-completion (brew)
-- tmux (brew)
-- reattach-to-user-namespace (brew)
-- Sublime Text 3
-- Virtual Environment (python)
-- Virtual Environment Wrapper (python)
-- Sass (ruby)
-- Compsas (ruby)
-- Listen (ruby)
-- Bourbon (ruby)
-- Susy (ruby)
-- Breakpoint (ruby)
-- Vagrant
-- VirtualBox
