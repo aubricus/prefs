@@ -2,7 +2,7 @@
     <content><![CDATA[
 var ${1:} = require('${2:path/to/module}');
 ]]></content>
-    <tabTrigger>rq-require</tabTrigger>
+    <tabTrigger>require</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 
