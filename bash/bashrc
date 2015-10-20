@@ -12,6 +12,7 @@ pref_aliases="$pref_dir/aliases"
 pref_ps1="$pref_dir/ps1"
 pref_sublime="$pref_dir/sublime"
 pref_rvm="$pref_dir/rvm"
+pref_vagrantenv="$pref_dir/vagrantenv"
 
 # Other Variables
 
@@ -36,6 +37,7 @@ if [ $sys_name == $darwin_name ]; then
     prefs[6]=$pref_aliases
     prefs[7]=$pref_sublime
     prefs[8]=$pref_rvm
+    prefs[9]=$pref_vagrantenv
 fi
 
 

@@ -6,6 +6,7 @@ alias raliases='. ~/.prefs/aliases'
 # System
 
 alias ll='ls -la'
+alias l='ls -la'
 alias cd..='cd ..'
 alias reset='clear && cd'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES'

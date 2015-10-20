@@ -3,5 +3,5 @@ RVM_HOME="$HOME/.rvm"
 if [ -d "$RVM_HOME" ]; then
   source $RVM_HOME/scripts/rvm
 else
-  echo 'rvm does is not installed...'
+  echo 'rvm is not installed...'
 fi
