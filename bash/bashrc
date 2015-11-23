@@ -13,6 +13,7 @@ pref_ps1="$pref_dir/ps1"
 pref_sublime="$pref_dir/sublime"
 pref_rvm="$pref_dir/rvm"
 pref_vagrantenv="$pref_dir/vagrantenv"
+pref_docker="$pref_dir/docker"
 
 # Other Variables
 
@@ -38,6 +39,7 @@ if [ $sys_name == $darwin_name ]; then
     prefs[7]=$pref_sublime
     prefs[8]=$pref_rvm
     prefs[9]=$pref_vagrantenv
+    prefs[10]=$pref_docker
 fi
 
 

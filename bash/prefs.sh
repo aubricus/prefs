@@ -27,15 +27,27 @@ links[1]=".bashrc"
 links[2]=".gemrc"
 links[3]=".vimrc"
 links[4]=".prefs"
-links[5]='.tmux'
-links[6]='.tmux.conf'
+links[5]=".tmux"
+links[6]=".tmux.conf"
 links[7]=".gitconfig"
 links[8]=".gitignore_global"
 
 # Script Functions
 
+function print_help {
+    echo "\
+
+Commands:
+
+link        unlinks old prefs, links new prefs
+unlink      unlinks old prefs
+help        prints this message
+\
+"
+}
+
 function link_prefs {
-    echo '...linking prefs!'
+    echo "...linking prefs!"
 
     for (( i=0; i<${#targets[@]}; i++ ));
     do
@@ -48,11 +60,11 @@ function link_prefs {
         fi
     done
 
-    echo '...complete!'
+    echo "...complete!"
 }
 
 function unlink_prefs {
-    echo '...unlinking prefs!'
+    echo "...unlinking prefs!"
 
     for (( i=0; i<${#targets[@]}; i++ ));
     do
@@ -65,17 +77,20 @@ function unlink_prefs {
         fi
     done
 
-    echo '...complete!'
+    echo "...complete!"
 }
 
 # Command runs here
 cd $link_dir
 
-if [ "$1" = 'link' ]; then
+if [ "$1" = "help" ]; then
+    print_help
+
+elif [ "$1" = "link" ]; then
     unlink_prefs
     link_prefs
 
-elif [ "$1" = 'unlink' ]; then
+elif [ "$1" = "unlink" ]; then
     unlink_prefs
 
 fi

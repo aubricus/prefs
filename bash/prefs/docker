@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+
+DOCKER_MACHINE_NAME="dev"
+
+# Running | Stopped
+DOCKER_MACHINE_STATUS=$(docker-machine status $DOCKER_MACHINE_NAME)
+
+if [ "$DOCKER_MACHINE_STATUS" == "Stopped" ]; then
+    echo "$DOCKER_MACHINE_NAME is not running...Starting"
+    $(docker-machine start $DOCKER_MACHINE_NAME 2>&1 > /dev/null)
+fi
+
+DOCKER_MACHINE_ACTIVE=$(docker-machine active 2>/dev/null)
+
+if [ "$DOCKER_MACHINE_ACTIVE" != "$DOCKER_MACHINE_NAME" ]; then
+    echo "Activating Docker Machine: $DOCKER_MACHINE_NAME"
+    eval "$(docker-machine env $DOCKER_MACHINE_NAME)"
+fi
