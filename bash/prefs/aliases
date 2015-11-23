@@ -30,6 +30,7 @@ alias gco='git checkout $1'
 alias gdel='git branch -D $1'
 alias gdelr='git push origin :$1'
 alias gclo='git clone $1'
+alias gcup='git commit -a --amend --no-edit'
 
 
 # Vagrant
