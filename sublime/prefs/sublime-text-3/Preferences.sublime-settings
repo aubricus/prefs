@@ -1,4 +1,9 @@
 {
+    "added_words":
+    [
+        "refactor"
+    ],
+
     "auto_complete_commit_on_tab": true,
     "binary_file_patterns":
     [
@@ -38,26 +43,26 @@
         "*.psd",
         "*.db"
     ],
+
     "folder_exclude_patterns":
     [
         ".svn",
-        ".git",
         ".hg",
         "CVS",
         ".sass-cache"
     ],
+
     "ignored_packages":
     [
         "Vintage"
     ],
+
     "rulers":
     [
-        80, 120
+        39,
+        79,
+        120
     ],
-
-    // re-enable these after packages are installed
-    // "color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
-    // "theme": "Flatland Dark.sublime-theme",
 
     "default_encoding": "UTF-8",
     "fallback_encoding": "UTF-8",
@@ -67,7 +72,6 @@
     "trim_automatic_white_space": true,
     "trim_trailing_white_space_on_save": true,
 
-    "font_face": "Ubuntu Mono",
     "font_size": 12.0,
 
     "overlay_scroll_bars": "enabled",
@@ -79,4 +83,6 @@
     "spell_check": false,
     "tree_animation_enabled": false,
     "ensure_newline_at_eof_on_save": true,
+
+
 }

@@ -2,12 +2,11 @@
     <content><![CDATA[
 define(function (require, exports, module) {
 
-var marionette = require('marionette');
+var marionette = require("marionette");
 
 var ${1:FooAppRouter} =  marionette.AppRouter.extend({
     appRoutes:{
-        '${2:route}' : '${3:routeDelegate}',${0:}
-        '*default': 'default'
+        "*default": "default"
     }
 });
 

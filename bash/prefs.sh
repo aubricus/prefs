@@ -31,6 +31,7 @@ links[5]=".tmux"
 links[6]=".tmux.conf"
 links[7]=".gitconfig"
 links[8]=".gitignore_global"
+links[9]=".pdbrc.py"
 
 # Script Functions
 

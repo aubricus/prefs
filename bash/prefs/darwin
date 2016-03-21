@@ -4,11 +4,12 @@
 HOME_BIN=$HOME/bin
 USR_LOCAL_BIN=/usr/local/bin
 USR_LOCAL_SBIN=/usr/local/sbin
+NODE_BIN=$HOME/.node/bin
 
 # Add RVM to PATH for scripting
 RVM_BIN=$HOME/.rvm/bin
 
-export PATH=$RVM_BIN:$HOME_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$PATH
+export PATH=$RVM_BIN:$HOME_BIN:$USR_LOCAL_BIN:$USR_LOCAL_SBIN:$NODE_BIN:$PATH
 
 # Must brew install git and bash-completion to get __git_ps1
 

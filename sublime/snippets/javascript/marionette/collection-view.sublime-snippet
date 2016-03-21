@@ -2,19 +2,18 @@
     <content><![CDATA[
 define(function (require, exports, module) {
 
-var marionette = require('marionette');
-var ${2:FooItemView} = require('../views/cells/${3:path/to/itemview}').${2:FooItemView};
+var marionette = require("marionette");
+var ${2:FooItemView} = require("../views/cells/${3:path/to/itemview}").${2:FooItemView};
 
 var ${4:FooCollectionView} =  marionette.CollectionView.extend({
     childView : ${2:FooItemView},
-    childViewContainer : '.js-${5:item-container}',
 
     ui : {
-        // 'foo': 'js-foo'
+        // foo: "js-foo"
     },
 
     events : {
-        // 'click @ui.foo': 'wantsFooClick'
+        // "click @ui.foo": "wantsFooClick"
     },
 
     initialize : function(options){

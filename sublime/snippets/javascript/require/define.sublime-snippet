@@ -4,7 +4,7 @@ define(function (require, exports, module) {
     ${1:}
 });
 ]]></content>
-    <tabTrigger>rq-define</tabTrigger>
+    <tabTrigger>define</tabTrigger>
     <scope>source.js</scope>
 </snippet>
 

@@ -2,7 +2,7 @@
     <content><![CDATA[
 define(function(require, exports, module) {
 
-describe('${1:description here}', function() {
+describe("${1:description here}", function() {
 
     beforeEach(function() {
     });
@@ -11,7 +11,7 @@ describe('${1:description here}', function() {
     });
 
     // Test Suite
-    ${2:}
+    ${0:}
 
 });
 });

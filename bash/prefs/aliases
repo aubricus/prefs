@@ -17,21 +17,13 @@ alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO'
 alias gh="git remote -v | grep git@github.com | grep fetch | awk '{print $2}' | sed 's/git@/http:\/\//' | sed 's/com:/com\//' | xargs open"
 
 # Git
+# moved a lot of these to git aliases, see .gitconfig
 alias gl='git log'
 alias gf='git fetch --all'
 alias gall='git add -A'
-alias gm='git mergetool'
 alias gs='git status'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gp='git push'
-alias gb='git checkout -b $1'
-alias gco='git checkout $1'
-alias gdel='git branch -D $1'
-alias gdelr='git push origin :$1'
 alias gclo='git clone $1'
-alias gcup='git commit -a --amend --no-edit'
-
+alias gp='git push'
 
 # Vagrant
 
@@ -49,7 +41,6 @@ alias vssh='vagrant ssh'
 
 alias ssh-ls='ssh-add -l'
 alias ssh-gh='ssh-add ~/.ssh/git_rsa'
-
 
 # Virtalenv Wrapper Aliases
 

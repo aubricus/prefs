@@ -1,15 +1,17 @@
 {
+    "bootstrapped": true,
     "installed_packages":
     [
-        "Dayle Rees Color Schemes",
         "DocBlockr",
         "Emmet",
         "GitGutter",
-        "JSLint",
+        "JavaScriptNext - ES6 Syntax",
+        "LoremIpsum",
+        "Materialize",
         "OmniMarkupPreviewer",
+        "Package Control",
         "Python Flake8 Lint",
         "SCSS",
         "SideBarEnhancements",
-        "Theme - Flatland"
     ]
 }

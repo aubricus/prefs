@@ -2,11 +2,11 @@
     <content><![CDATA[
 define(function( require, exports, module ){
 
-var backbone = require('backbone');
-var ${1:FooModel} = require('../${2:path/to/model}').${1:FooModel};
+var backbone = require("backbone");
+var ${1:FooModel} = require("../${2:path/to/model}").${1:FooModel};
 
 var ${3:FooCollection} =  backbone.Collection.extend({
-    ${4://}urlRoot: '${5:/api/v1/foo/}',
+    ${4://}urlRoot: "${5:/api/v1/foo/}",
     model: ${1:FooModel}
 });
 

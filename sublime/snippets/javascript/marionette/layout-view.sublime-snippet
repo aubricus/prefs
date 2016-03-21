@@ -6,10 +6,14 @@ var marionette = require("marionette");
 var ${2:FooItemView} = require("../views/${2:path/to/itemview}").${2:FooItemView};
 var template = require("hbs!../templates/${1:path/to/template}");
 
-var ${3:FooCompositeView} =  marionette.CompositeView.extend({
+var ${3:FooCompositeView} =  marionette.LayoutView.extend({
     template : template,
     childView : ${2:FooItemView},
     childViewContainer : "#${3:.child-view-container}",
+
+    regions: {
+        // regionName: ".js-region-name"
+    },
 
     ui : {
         // foo: "js-foo"

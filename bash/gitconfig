@@ -36,7 +36,43 @@
 
 [diff]
     tool = Kaleidoscope
+
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+
+[alias]
+    ai      = add -i
+    all     = add -A
+    p       = push
+    fp      = push -f
+    s       = status
+    cl      = clone
+    co      = checkout
+    ca      = commit -a
+    cm      = "!f() { git commit -am $1; }; f"
+    cr      = commit -a --amend --no-edit
+    cam     = commit --amend
+    dl      = diff --cached HEAD^
+    mt      = mergetool
+    rb      = "!f() { git rebase $1/$2; }; f"
+    rbi     = "!f() { git rebase -i HEAD~$1; }; f"
+    rbo     = "!f() { git rebase origin/$1; }; f"
+    rbu     = "!f() { git rebase upstream/$1; }; f"
+    b       = "!f() { git checkout -b $1; }; f"
+    bd      = "!f() { git branch -D $1; }; f"
+    bdr     = "!f() { git push origin --delete $1 }; f"
+    r       = "!f() { git reset HEAD$1; }; f"
+    rh      = reset --hard
+    unstage = reset
+    ls      = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    ll      = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    remotes = remote -v
+    update  = fetch -a
+    st      = stash
+    stp     = stash pop
+    la      = "!git config -l | grep alias | cut -c 7-"

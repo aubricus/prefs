@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+var ${1:templateName} = require("hbs!${2:path/to/template}");
+]]></content>
+    <tabTrigger>template</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
+
