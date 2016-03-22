@@ -36,7 +36,6 @@ alias vhalt='vagrant halt'
 alias vsuspend='vagrant suspend'
 alias vssh='vagrant ssh'
 
-
 # Ssh-Agent
 
 alias ssh-ls='ssh-add -l'
@@ -44,16 +43,44 @@ alias ssh-gh='ssh-add ~/.ssh/git_rsa'
 
 # Virtalenv Wrapper Aliases
 
-alias mkenv='mkvirtualenv $1'
-alias rmenv='rmvirtualenv $1'
-alias chenv='workon $1'
+alias mkenv='mkvirtualenv'
+alias rmenv='rmvirtualenv'
+alias chenv='workon'
 alias denv='deactivate'
 alias lsenv='lsvirtualenv'
 
 # Misc
 
-alias chkport='sudo lsof -i $1'
+alias chkport='sudo lsof -i'
 alias workspace='cd ~/Workspace'
 alias repos='cd ~/Repos'
 alias ios='open -a "iPhone Simulator"'
+
+# Docker
+
+alias    dps='docker ps -a'
+function drst { docker restart $1; }                        # ex: $ drst foo_django_1
+function drstdj { docker restart $1_django_1; }             # ex: $ drstdj foo
+function dsh { docker exec -it $1 /bin/bash; }              # ex: $ dsh foo_django_1
+function dshdj { docker exec -it $1_django_1 /bin/bash; }   # ex: $ dshdj foo
+
+function deval { eval $(docker-machine env $1); }           # ex: $ deval dev
+function dmip { docker-machine env $1 ip; }                 # ex: $ dmip dev
+function dmstart { docker-machine start $1; }               # ex: $ dmstart dev
+function dmstop { docker-machine stop $1; }                 # ex: $ dmstop dev
+function dmkill { docker-machine kill $1; }                 # ex: $ dmkill dev
+alias    dmls='docker-machine ls'
+
+alias dcup='docker-compose up -d'
+alias dcstop='docker-compose stop'
+alias dckill='docker-compose kill'
+
+function dwatch {
+    # $1 is the port your unison container is running on
+    # ex: dwatch 5000
+    SOCKET_URI=socket://$(docker-machine ip dev):$1
+    echo "Watch starting on $SOCKET_URI"
+    echo "Waiting for changes..."
+    fswatch -o . | xargs -n1 -I{} unison . $SOCKET_URI -ignore 'Path .git' -ignore 'Path env' -ignore 'Path .vagrant' -auto -batch
+}
 
