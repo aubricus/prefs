@@ -65,7 +65,7 @@ function dsh { docker exec -it $1 /bin/bash; }              # ex: $ dsh foo_djan
 function dshdj { docker exec -it $1_django_1 /bin/bash; }   # ex: $ dshdj foo
 
 function deval { eval $(docker-machine env $1); }           # ex: $ deval dev
-function dmip { docker-machine env $1 ip; }                 # ex: $ dmip dev
+function dmip { docker-machine ip $1; }                     # ex: $ dmip dev
 function dmstart { docker-machine start $1; }               # ex: $ dmstart dev
 function dmstop { docker-machine stop $1; }                 # ex: $ dmstop dev
 function dmkill { docker-machine kill $1; }                 # ex: $ dmkill dev
