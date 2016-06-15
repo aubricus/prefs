@@ -3,7 +3,6 @@
     [
         "refactor"
     ],
-
     "auto_complete_commit_on_tab": true,
     "binary_file_patterns":
     [
@@ -21,6 +20,13 @@
         "*.jar",
         "*.zip"
     ],
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/User/Material Spaceblack Oceanic (Flake8Lint).tmTheme",
+    "default_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "draw_white_space": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "fallback_encoding": "UTF-8",
     "file_exclude_patterns":
     [
         "*.pyc",
@@ -43,7 +49,6 @@
         "*.psd",
         "*.db"
     ],
-
     "folder_exclude_patterns":
     [
         ".svn",
@@ -51,37 +56,24 @@
         "CVS",
         ".sass-cache"
     ],
-
+    "font_size": 11.0,
     "ignored_packages":
     [
         "Vintage"
     ],
-
+    "overlay_scroll_bars": "enabled",
     "rulers":
     [
         39,
         79,
         119
     ],
-
-    "default_encoding": "UTF-8",
-    "fallback_encoding": "UTF-8",
-    "default_line_ending": "unix",
-    "draw_white_space": "all",
+    "scroll_past_end": true,
+    "spell_check": false,
     "translate_tabs_to_spaces": true,
+    "tree_animation_enabled": false,
     "trim_automatic_white_space": true,
     "trim_trailing_white_space_on_save": true,
-
-    "font_size": 12.0,
-
-    "overlay_scroll_bars": "enabled",
-
     "word_wrap": false,
-    "word_wrap_column": 80,
-
-    "bold_folder_labels": true,
-    "spell_check": false,
-    "tree_animation_enabled": false,
-    "ensure_newline_at_eof_on_save": true,
-    "scroll_past_end": true,
+    "word_wrap_column": 80
 }

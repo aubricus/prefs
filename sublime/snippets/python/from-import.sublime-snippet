@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-from ${1:} import ${2:}
-    ]]></content>
+from ${1:foo} import ${2:bar}
+]]></content>
     <tabTrigger>from</tabTrigger>
     <scope>source.python</scope>
 </snippet>

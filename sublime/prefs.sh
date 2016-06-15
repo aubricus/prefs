@@ -15,6 +15,7 @@ Commands:
 
 copy_prefs          copy prefs into Sublime system prefs dir
 copy_snippets       copy snippets into Sublime system prefs dir
+copy_all            copy prefs & snippets
 help                prints this message
 \
 "
@@ -27,6 +28,8 @@ function copy_prefs {
         cp "$sublime3_prefs_dir/Preferences.sublime-settings" "$sublime3_user_dir/"
         cp "$sublime3_prefs_dir/Package Control.sublime-settings" "$sublime3_user_dir/"
         echo "...success!"
+    else
+        echo "...failure!"
     fi
 }
 
@@ -36,20 +39,22 @@ function copy_snippets {
     if [ -e "$sublime3" ]; then
         cp -a "$snippets_dir" "$sublime3_user_dir"
         echo "...success!"
+    else
+        echo "...failure!"
     fi
 }
 
 # Command runs here
 
-if [ "$1" = 'copyprefs' ]; then
+if [ "$1" = 'copy_prefs' ]; then
     copy_prefs
 fi
 
-if [ "$1" = 'copysnippets' ]; then
+if [ "$1" = 'copy_snippets' ]; then
     copy_snippets
 fi
 
-if [ "$1" = 'copyall' ]; then
+if [ "$1" = 'copy_all' ]; then
     copy_prefs
     copy_snippets
 fi

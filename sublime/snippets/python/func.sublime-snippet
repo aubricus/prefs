@@ -2,7 +2,7 @@
     <content><![CDATA[
 def ${1:}():
     ${0:}
-    ]]></content>
+]]></content>
     <tabTrigger>func</tabTrigger>
     <scope>source.python</scope>
 </snippet>

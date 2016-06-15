@@ -6,7 +6,7 @@ def ${1:decorator_name}
             return func(*args, **kwargs)${0:}
         return ${3:_decorator_wrapper}
     return ${2:_decorator}
-    ]]></content>
+]]></content>
     <tabTrigger>pdecorator</tabTrigger>
     <scope>source.python</scope>
 </snippet>
