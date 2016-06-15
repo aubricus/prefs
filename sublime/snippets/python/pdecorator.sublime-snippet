@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+def ${1:decorator_name}
+    def ${2:_decorator}(func):
+        def ${3:_decorator_wrapper}(*args, **kwargs):
+            return func(*args, **kwargs)${0:}
+        return ${3:_decorator_wrapper}
+    return ${2:_decorator}
+    ]]></content>
+    <tabTrigger>pdecorator</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
