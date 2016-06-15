@@ -46,6 +46,10 @@ function copy_snippets {
 
 # Command runs here
 
+if [ "$1" = 'help' ]; then
+    print_help
+fi
+
 if [ "$1" = 'copy_prefs' ]; then
     copy_prefs
 fi
