@@ -22,11 +22,13 @@ help                prints this message
 }
 
 function copy_prefs {
+    echo 'This script only copies core Sublime3 prefs...'
     echo '...copying prefs!'
 
     if [ -e "$sublime3" ]; then
         cp "$sublime3_prefs_dir/Preferences.sublime-settings" "$sublime3_user_dir/"
         cp "$sublime3_prefs_dir/Package Control.sublime-settings" "$sublime3_user_dir/"
+        cp "$sublime3_prefs_dir/Default (OSX).sublime-keymap" "$sublime3_user_dir/"
         echo "...success!"
     else
         echo "...failure!"
