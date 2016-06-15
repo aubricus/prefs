@@ -15,12 +15,12 @@
     "material_theme_disable_folder_animation": false,
     "material_theme_disable_tree_indicator": false,
     "material_theme_small_statusbar": true,
-    "material_theme_small_tab": true
+    "material_theme_small_tab": true,
     "bold_folder_labels": true,
     "caret_extra_bottom": 2,
     "caret_extra_top": 2,
     "caret_extra_width": 2,
     "caret_style": "phase",
-    "color_scheme": "Packages/User/SublimeLinter/Material Toy Chest (Flake8Lint) (SL).tmTheme"
+    "color_scheme": "Packages/User/SublimeLinter/Material Toy Chest (Flake8Lint) (SL).tmTheme",
     "theme": "Material Toy Chest.sublime-theme",
 }

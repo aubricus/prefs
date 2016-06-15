@@ -1,4 +1,3 @@
-
 # Virtualenv Settings
 
 export WORKON_HOME=$HOME/.virtualenv

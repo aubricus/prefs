@@ -61,7 +61,7 @@
     [
         39,
         79,
-        120
+        119
     ],
 
     "default_encoding": "UTF-8",
@@ -76,13 +76,12 @@
 
     "overlay_scroll_bars": "enabled",
 
-    "word_wrap": true,
+    "word_wrap": false,
     "word_wrap_column": 80,
 
     "bold_folder_labels": true,
     "spell_check": false,
     "tree_animation_enabled": false,
     "ensure_newline_at_eof_on_save": true,
-
-
+    "scroll_past_end": true,
 }
