@@ -6,8 +6,12 @@ sublime3_prefs_dir="$prefs_dir/sublime-text-3"
 sublime3="/Applications/Sublime Text.app"
 sublime3_user_dir="$HOME/Library/Application Support/Sublime Text 3/Packages/User"
 
-# Script Functions
+# Package settings
+sublime_prefs="Preferences.sublime-settings"
+sublime_package_settings="Package Control.sublime-settings"
+sublime_keymap="Default (OSX).sublime-keymap"
 
+# Script Functions
 function print_help {
     echo "\
 
@@ -26,9 +30,9 @@ function copy_prefs {
     echo '...copying prefs!'
 
     if [ -e "$sublime3" ]; then
-        cp "$sublime3_prefs_dir/Preferences.sublime-settings" "$sublime3_user_dir/"
-        cp "$sublime3_prefs_dir/Package Control.sublime-settings" "$sublime3_user_dir/"
-        cp "$sublime3_prefs_dir/Default (OSX).sublime-keymap" "$sublime3_user_dir/"
+        cp "$sublime3_prefs_dir/$sublime_prefs" "$sublime3_user_dir/"
+        cp "$sublime3_prefs_dir/$sublime_package_settings" "$sublime3_user_dir/"
+        cp "$sublime3_prefs_dir/$sublime_keymap" "$sublime3_user_dir/"
         echo "...success!"
     else
         echo "...failure!"

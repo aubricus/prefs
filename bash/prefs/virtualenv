@@ -22,16 +22,13 @@ do
     fi
 done
 
+py2="$WORKON_HOME/py2"
 
-# If default venv exists...
-
-default_env="$WORKON_HOME/default"
-
-if [ -d "$default_env" ]; then
+if [ -d "$py2" ]; then
     # Load it.
-    . ${default_env}/bin/activate
+    . ${py2}/bin/activate
 else
     # Create & load it.
-    virtualenv $default_env
-    . $default_env/bin/activate
+    virtualenv $py2
+    . $py2/bin/activate
 fi
