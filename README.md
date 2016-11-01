@@ -20,7 +20,7 @@ help        prints this message
 
 ```
 
-## Submline Prefs
+## Sublime Prefs
 
 */sublime*:
 
