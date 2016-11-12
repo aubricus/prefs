@@ -38,7 +38,7 @@ help                prints this message
 
 ## General Disclaimer
 
-This is a personal repository to manage development preferences. I periodically update this repos as I find things useful here and there. There are hard-coded paths here and there, so I imagine this repo doesn't *Just Work™* on other machines. That said, I do run this repository for both work and personal macs (running the latest OSX).
+This is a personal repository to manage development preferences. I periodically update this repo as I find things useful here and there. There are hard-coded paths here and there, so I imagine this repo doesn't *Just Work™* on other machines. That said, I do run this repository for both work and personal macs (running the latest OSX).
 
 ## License
 
