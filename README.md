@@ -1,3 +1,10 @@
+
+---
+
+> __NOTE:__ This repo is abaondoned in favor [of my new dotfiles](https://github.com/aubricus/dotfiles) implementation.
+
+---
+
 # OSX Development "Prefs"
 
 Version OSX development environment preferences.
